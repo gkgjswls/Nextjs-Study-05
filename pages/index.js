@@ -29,7 +29,7 @@ export default function Home(props) {
   const {products} = props;
   return (
     <ul>
-      {products.map((product)=><li key={product.id}><Link href={{pathname: '/[pid]', query: {pid: product.id}}}>{product.title}</Link></li>)}
+      {products.map((product)=><li key={product.id}><Link href={{pathname: '/products/[pid]', query: {pid: product.id}}}>{product.title}</Link></li>)}
     </ul>
   )
   }
